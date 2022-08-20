@@ -15,7 +15,7 @@
 }
 
 .container-fluid > div{
-   margin: auto;
+   margin:  10px auto;
     padding: 10px 15px;
     background-color: black;
     border: 3px solid;
