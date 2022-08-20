@@ -1,0 +1,78 @@
+:root{
+   --btnDefaultHeight: 4em;
+   --btnDefaultColor: #2f2f2f;
+   --btnDefaultColor2: #797575;
+}
+.container-fluid,body{
+    height: 100%;
+    background-color: #6e6e6e;
+}
+
+.container-fluid{
+   display: flex ;
+   flex-direction: column ;
+   justify-content: center ;
+}
+
+.container-fluid > div{
+   margin: auto;
+    padding: 10px 15px;
+    background-color: black;
+    border: 3px solid;
+}
+
+.btn-row{
+    margin-bottom: 0.1em;
+ }
+
+ .btn-row div {
+    margin: 0;
+    padding: 0 0.1em;
+ }
+
+  .num, #decimal{
+    height: var(--btnDefaultHeight);
+    background-color: var(--btnDefaultColor);
+    border: var(--btnDefaultColor);
+    color: white;
+ }
+
+  .num:hover, #decimal:hover {
+    background-color: var(--btnDefaultColor);
+    border: 1px solid white;
+    color: black;
+ }
+ .num:active,.num:focus,#decimal:focus, #decimal:active{
+   outline: none !important;
+   box-shadow: none !important;
+    background-color: var(--btnDefaultColor);
+    border: var(--btnDefaultColor);
+    color: white;
+ }
+ .equ, .sEqu {
+   height: var(--btnDefaultHeight);
+ }
+
+ .equ {
+    background-color: var(--btnDefaultColor2);
+    border: var(--btnDefaultColor2);
+    color: white;
+ }
+
+ .equ:hover {
+   background-color: var(--btnDefaultColor2);
+    border: 1px solid white;
+    color: black;
+ }
+ .equ:active,.equ:focus{
+   outline: none !important;
+   box-shadow: none !important;
+    background-color: var(--btnDefaultColor2);
+    border: var(--btnDefaultColor2);
+    color: white;
+ }
+ .display-wrap{
+   height: 6em;
+   overflow:scroll;
+ }
+
